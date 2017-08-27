@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.cmu.hw8htiruvee.FirstActivity"
+    tools:showIn="@layout/activity_first">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grocery List"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="13dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="325dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter the items"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="65dp"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/googlecalbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save to Calendar"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="172dp"
+        android:layout_alignBaseline="@+id/TweetMe"
+        android:layout_alignBottom="@+id/TweetMe"
+        android:layout_alignStart="@+id/editText" />
+
+    <Button
+        android:id="@+id/TweetMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tweet Me"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="172dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
+
+
+</RelativeLayout>
